@@ -1,0 +1,6 @@
+C:\Users\Usuario\source\repos\LABORATORIO_01_EDII\Arbol\bin\Debug\Arbol.dll
+C:\Users\Usuario\source\repos\LABORATORIO_01_EDII\Arbol\bin\Debug\Arbol.pdb
+C:\Users\Usuario\source\repos\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.dll
+C:\Users\Usuario\source\repos\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.pdb
