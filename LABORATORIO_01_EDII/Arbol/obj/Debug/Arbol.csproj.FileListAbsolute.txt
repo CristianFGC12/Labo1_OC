@@ -4,3 +4,9 @@ C:\Users\Usuario\source\repos\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.csproj.A
 C:\Users\Usuario\source\repos\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\source\repos\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.dll
 C:\Users\Usuario\source\repos\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.pdb
+C:\Users\Usuario\Documents\Labo1_OC\LABORATORIO_01_EDII\Arbol\bin\Debug\Arbol.dll
+C:\Users\Usuario\Documents\Labo1_OC\LABORATORIO_01_EDII\Arbol\bin\Debug\Arbol.pdb
+C:\Users\Usuario\Documents\Labo1_OC\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Labo1_OC\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Labo1_OC\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.dll
+C:\Users\Usuario\Documents\Labo1_OC\LABORATORIO_01_EDII\Arbol\obj\Debug\Arbol.pdb

@@ -13,7 +13,6 @@ namespace LABORATORIO_01_EDII
 {
     class Program
     {
-        //private static string _path = @"C:\Users\Usuario\Documents\Trabajador.json";
         public static AVLTree<Trabajador> trabajador = new AVLTree<Trabajador>();
         static void Main(string[] args)
         {
@@ -27,7 +26,6 @@ namespace LABORATORIO_01_EDII
                 Console.WriteLine("3. Editar Manual");
                 Console.WriteLine("4. Eliminar Manual");
                 Console.WriteLine("5. Busqueda");
-                Console.WriteLine("A la hora de ingresar datos siga el siguiente formato "+'"'+'"'+"dato"+'"'+'"');
                 opcion = Convert.ToInt32(Console.ReadLine());
                 switch (opcion)
                 {
@@ -99,7 +97,7 @@ namespace LABORATORIO_01_EDII
                         trabaja.dateBirth = Console.ReadLine();
                         Console.WriteLine("Ingrese la dirección del solicitante");
                         trabaja.address = Console.ReadLine();
-                        trabajador.insert(trabaja, ComparacionNombre);
+                        trabajador.insert(trabaja, ComparacioDPI);
                         Console.WriteLine("Desea volver al menu No = 0, Si = 1");
                         con = Convert.ToInt32(Console.ReadLine());
                         Console.Clear();
@@ -221,6 +219,12 @@ namespace LABORATORIO_01_EDII
                         con = Convert.ToInt32(Console.ReadLine());
                         Console.Clear();
                         break;
+                    default:
+                        Console.WriteLine("Opcion no valida");
+                        Console.WriteLine("Desea volver al menu No = 0, Si = 1");
+                        con = Convert.ToInt32(Console.ReadLine());
+                        Console.Clear();
+                        break;
                 }
             } while (con == 1);
         }
@@ -228,23 +232,6 @@ namespace LABORATORIO_01_EDII
         {
             string solictanteJson = JsonConvert.SerializeObject(Lista.ToArray(),Formatting.Indented);
             File.WriteAllText(path, solictanteJson);
-        }
-        public static bool ComparacionNombre(Trabajador paciente, string operador, Trabajador paciente2)
-        {
-            int Comparacion = String.Compare(paciente.name, paciente2.name);
-            if (operador == "<")
-            {
-                return Comparacion < 0;
-            }
-            else if (operador == ">")
-            {
-                return Comparacion > 0;
-            }
-            else if (operador == "==")
-            {
-                return Comparacion == 0;
-            }
-            else return false;
         }
         public static bool ComparacioDPI(Trabajador paciente, string operador, Trabajador paciente2)
         {
@@ -263,5 +250,10 @@ namespace LABORATORIO_01_EDII
             }
             else return false;
         }
+        // El usar los apellidos como criterio de busqueda nos permite sesgar más el criterio de busqueda
+        // esto gracia a que servira como un filtro para buscar entre solicitantes con el mismo nombre, en el
+        // arbol lo podemos usar para buscar de forma directa sin riesgo a que se repita, lo mismo con la edición
+        // en el caso de insercción se puede tomar ya sea como su campo propio o como parte del campo de nombre, este
+        // ultimo brinda más exactitud.
     }
 }
