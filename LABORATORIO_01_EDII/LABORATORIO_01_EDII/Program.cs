@@ -250,10 +250,5 @@ namespace LABORATORIO_01_EDII
             }
             else return false;
         }
-        // El usar los apellidos como criterio de busqueda nos permite sesgar más el criterio de busqueda
-        // esto gracia a que servira como un filtro para buscar entre solicitantes con el mismo nombre, en el
-        // arbol lo podemos usar para buscar de forma directa sin riesgo a que se repita, lo mismo con la edición
-        // en el caso de insercción se puede tomar ya sea como su campo propio o como parte del campo de nombre, este
-        // ultimo brinda más exactitud.
     }
 }
